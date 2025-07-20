@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Survey Form</title>
+  </head>
+
+  <body>
+    <h1 id="title">Credible Construction Inc Survey Form</h1>
+    <p id="description">Please fill out this form, info from this form will help us to improve our services. Thank you for your time.</p>
+
+    <form id="survey-form">
+      <label for="name" id="name-label">Name</label>
+      <input type="text" id="name" placeholder="Enter your name" required>
+      <br>
+      <label for="email" id="email-label">Email</label>
+      <input type="email" id="email" placeholder="example@email.com" required>
+      <br>
+
+      <label for="number" id="number-label">Age (optional)</label>
+      <input type="number" id="number" min="10" max="100" placeholder="Age" >
+      <br>
+
+      <label for="dropdown">What best describe you?</label>
+      <select id="dropdown" name="describe">
+        <option value="">Select what best describes you</option>
+        <option value="home-owner">Home Owner</option>
+        <option value="tenant">Tenant</option>
+        <option value="retired">Retired</option>
+        <option value="temp-stay">Temporary stay</option>
+        <option value="real-estate">Real Estate</option> 
+      </select>
+        <br>
+      <label for="recommend">Would you recommend us to friends?</label>
+      <br>
+        <input type="radio" name="recommend" value="definitely" checked>
+      <label for="definitely" name="recommend" >Definitely</label>
+      <input type="radio" id="may-be" name="recommend" value="may-be" >
+      <label for="may-be">May be</label>
+      <input type="radio" id="no" name="recommend" value="no">
+      <label for="no">No</label>
+      <br>
+      <br>
+      <label for="improvement">What would you like to see improve?</label>
+      <br>
+      <input type="checkbox" id="faster-response" value="faster-response">
+      <label id="faster-reponse">Faster Response</label>
+      <input type="checkbox" id="improve-website" value="improve-website">
+      <label id="improve-website">Improved Website</label>
+      <br>
+      <br>
+      <label id="sugested-label">Any suggestion for improved services?<label>
+        <br>
+        <textarea id="suggested-label" placeholder="please write your suggestion" rows="5" cols="30"></textarea>
+        <br>
+        <button id="submit" type="submit">Submit</button>
+    </form>
+
+  </body>
+</html>
